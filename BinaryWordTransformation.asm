@@ -1,3 +1,10 @@
+;Se da un cuvant A. Sa se obtina dublucuvantul B astfel:
+;bitii 0-3 ai lui B sunt 0;
+;bitii 4-7 ai lui B sunt bitii 8-11 ai lui A
+;bitii 8-9 si 10-11 ai lui B sunt bitii 0-1 inversati ca valoare ai lui A (deci de 2 ori) ;
+;bitii 12-15 ai lui B sunt biti de 1
+;bitii 16-31 ai lui B sunt identici cu bitii 0-15 ai lui B.
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -17,13 +24,6 @@ segment data use32 class=data
 ; our code starts here
 segment code use32 class=code
     start:
-        ;Se da un cuvant A. Sa se obtina dublucuvantul B astfel:
-        ;bitii 0-3 ai lui B sunt 0;
-        ;bitii 4-7 ai lui B sunt bitii 8-11 ai lui A
-        ;bitii 8-9 si 10-11 ai lui B sunt bitii 0-1 inversati ca valoare ai lui A (deci de 2 ori) ;
-        ;bitii 12-15 ai lui B sunt biti de 1
-        ;bitii 16-31 ai lui B sunt identici cu bitii 0-15 ai lui B.
-        
         mov EBX, 0                    ; in EBX calculam rezultatul
         mov AX, [a]                                                                   ; AX = 0111011101010110b
         and AX, 0000111100000000b     ; izolam bitii 8-11 a lui A                     ; AX = 0000011100000000b
