@@ -1,3 +1,10 @@
+; Se da un sir de dublucuvinte (in segmentul de date). 
+; Se cere formarea si scrierea in fisier pozitiile octetilor de 
+; valoare maxima din fiecare dublucuvant. (evident considerandule fare semn).
+; Sa se afiseze si suma acestor octeti (consideranduse cu semn).
+; Exemplu: dd 1234A678h , 123456789h , 1AC3B47Dh, FEDC9876h .
+; Sirul format din pozitiile octetilor este: "3421".
+
 bits 32 
 
 global start        
@@ -11,12 +18,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll    
-
-;Se da un sir de dublucuvinte (in segmentul de date). 
-;Se cere formarea si scrierea in fisier pozitiile octetilor de valoare maxima din fiecare dublucuvant. (evident considerandule fare semn).
-;Sa se afiseze si suma acestor octeti (consideranduse cu semn).
-;Exemplu: dd 1234A678h , 123456789h , 1AC3B47Dh, FEDC9876h .
-;Sirul format din pozitiile octetilor este: "3421".
 
 segment data use32 class=data
     ; ...
