@@ -1,3 +1,6 @@
+; Se dau doua siruri de caractere ordonate alfabetic s1 si s2. 
+; Sa se construiasca prin interclasare sirul ordonat s3 care sa contina toate elementele din s1 si s2.
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -9,7 +12,6 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
 ; our data is declared here (the variables needed by our program)
-;Se dau doua siruri de caractere ordonate alfabetic s1 si s2. Sa se construiasca prin interclasare sirul ordonat s3 care sa contina toate elementele din s1 si s2.
 segment data use32 class=data
     ; ...
     s1 db 'b', 'd', 'e', 'f', 'n', 'y', 'z'
