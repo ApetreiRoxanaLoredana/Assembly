@@ -1,3 +1,5 @@
+; Se citesc trei siruri de caractere. Sa se determine si sa se afiseze rezultatul concatenarii lor.
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -11,7 +13,6 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
 ; our data is declared here (the variables needed by our program)
-;Se citesc trei siruri de caractere. Sa se determine si sa se afiseze rezultatul concatenarii lor.
 segment data use32 class=data
     ; ...
     sir1 times 100 db 0
