@@ -1,3 +1,7 @@
+; Sa se citeasca de la tastatura un nume de fisier si un text. 
+; Sa se creeze un fisier cu numele dat in directorul curent si sa se scrie textul in acel fisier. 
+; Observatii: Numele de fisier este de maxim 30 de caractere. Textul este de maxim 120 de caractere.
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -15,7 +19,6 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
 ; our data is declared here (the variables needed by our program)
-;Sa se citeasca de la tastatura un nume de fisier si un text. Sa se creeze un fisier cu numele dat in directorul curent si sa se scrie textul in acel fisier. Observatii: Numele de fisier este de maxim 30 de caractere. Textul este de maxim 120 de caractere.
 segment data use32 class=data
     ; ...
     format_citire db "%s", 10, 0
