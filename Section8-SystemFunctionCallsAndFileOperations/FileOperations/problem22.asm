@@ -1,3 +1,7 @@
+; Se da numele unui fisier si un numar pe cuvant scris in memorie. 
+; Se considera numarul in reprezentarea fara semn. Sa se scrie cifrele 
+; zecimale ale acestui numar ca text in fisier, fiecare cifra pe o linie separata.
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -12,7 +16,6 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
 ; our data is declared here (the variables needed by our program)
-;Se da numele unui fisier si un numar pe cuvant scris in memorie. Se considera numarul in reprezentarea fara semn. Sa se scrie cifrele zecimale ale acestui numar ca text in fisier, fiecare cifra pe o linie separata.
 segment data use32 class=data
     ; ...
     nume_fisier db "fisier.txt", 0
