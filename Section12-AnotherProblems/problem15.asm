@@ -1,3 +1,8 @@
+; Se da un sir de dublucuvinte. Se cere formarea si afisarea unui sir de biti cu urmatoarele reguli:
+; Se ia cel mai semnificativ octet din cel mai putin semnificativ cuvant, iar daca este strict negativ se pune in sir.
+; Eemplu: sir dd 12345678h,1234abcdh,FF00FE33h.
+; Pe ecan se afiseaza: 1010 1011 1111 1110 (numerele gasite fiind AB,FE).
+
 bits 32 
 
 global start        
@@ -11,12 +16,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll    
-
-;Problema 4:
-;Se da un sir de dublucuvinte. Se cere formarea si afisarea unui sir de biti cu urmatoarele reguli:
-;Se ia cel mai semnificativ octet din cel mai putin semnificativ cuvant, iar daca este strict negativ se pune in sir.
-;Eemplu: sir dd 12345678h,1234abcdh,FF00FE33h.
-;Pe ecan se afiseaza: 1010 1011 1111 1110 (numerele gasite fiind AB,FE).
 
 segment data use32 class=data
     ; ...
