@@ -1,3 +1,8 @@
+; Se dau un nume de fisier si un text (definite in segmentul de date). 
+; Textul contine litere mici, litere mari, cifre si caractere speciale. 
+; Sa se transforme toate literele mici din textul dat in litere mari. 
+; Sa se creeze un fisier cu numele dat si sa se scrie textul obtinut in fisier.
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -13,7 +18,6 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
 ; our data is declared here (the variables needed by our program)
-;Se dau un nume de fisier si un text (definite in segmentul de date). Textul contine litere mici, litere mari, cifre si caractere speciale. Sa se transforme toate literele mici din textul dat in litere mari. Sa se creeze un fisier cu numele dat si sa se scrie textul obtinut in fisier.
 segment data use32 class=data
     ; ...
     nume_fisier db "fisier.txt", 0
