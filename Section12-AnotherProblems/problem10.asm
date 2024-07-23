@@ -1,3 +1,7 @@
+; Se citesc mai multe siruri de caractere. 
+; Sa se determine daca primul apare ca subsecventa 
+; in fiecare din celelalte si sa se dea un mesaj corespunzator.
+
 bits 32 
 
 global start        
@@ -11,8 +15,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll    
-
-;Se citesc mai multe siruri de caractere. Sa se determine daca primul apare ca subsecventa in fiecare din celelalte si sa se dea un mesaj corespunzator.
 
 segment data use32 class=data
     ; ...
