@@ -1,3 +1,7 @@
+; Se dau in segmentul de date un nume de fisier si un text 
+; (poate contine orice tip de caracter). Sa se calculeze suma cifrelor din text. 
+; Sa se creeze un fisier cu numele dat si sa se scrie suma obtinuta in fisier.
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -15,7 +19,6 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
 ; our data is declared here (the variables needed by our program)
-;Se dau in segmentul de date un nume de fisier si un text (poate contine orice tip de caracter). Sa se calculeze suma cifrelor din text. Sa se creeze un fisier cu numele dat si sa se scrie suma obtinuta in fisier.
 segment data use32 class=data
     ; ...
     nume_fisier db "fisier.txt", 0
