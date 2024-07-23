@@ -1,3 +1,8 @@
+; Se dau doua siruri de caractere de lungimi egale. 
+; Se cere sa se calculeze si sa se afiseze rezultatele intercalarii literelor, 
+; pentru cele doua intercalari posibile (literele din primul sir pe pozitii pare, 
+; respectiv literele din primul sir pe pozitii impare).
+
 bits 32 
 
 global start        
@@ -11,8 +16,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll    
-
-;Se dau doua siruri de caractere de lungimi egale. Se cere sa se calculeze si sa se afiseze rezultatele intercalarii literelor, pentru cele doua intercalari posibile (literele din primul sir pe pozitii pare, respectiv literele din primul sir pe pozitii impare).
 
 segment data use32 class=data
     ; ...
