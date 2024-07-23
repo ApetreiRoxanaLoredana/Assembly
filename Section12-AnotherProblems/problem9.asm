@@ -1,3 +1,8 @@
+; Se cere sa se citeasca de la tastatura un sir de numere, 
+; date in baza 16 (se citeste de la tastatura un sir de
+; caractere si in memorie trebuie stocat un sir de numere). 
+; Sa se afiseze valoarea zecimala a nr atat ca numere fara semn cat si ca numere cu semn.
+
 bits 32 
 
 global start        
@@ -11,8 +16,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll    
-
-;Se cere sa se citeasca de la tastatura un sir de numere, date in baza 16 (se citeste de la tastatura un sir de caractere si in memorie trebuie stocat un sir de numere). Sa se afiseze valoarea zecimala a nr atat ca numere fara semn cat si ca numere cu semn.
 
 segment data use32 class=data
     ; ...
