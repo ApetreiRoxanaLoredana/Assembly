@@ -1,3 +1,7 @@
+; Se da un nume de fisier (definit in segmentul de date). Sa se creeze un fisier cu numele dat, 
+; apoi sa se citeasca de la tastatura cuvinte pana cand se citeste de la tastatura caracterul '$'. 
+; Sa se scrie in fisier doar cuvintele care contin cel putin o litera mare (uppercase)
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -14,7 +18,6 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
 ; our data is declared here (the variables needed by our program)
-;Se da un nume de fisier (definit in segmentul de date). Sa se creeze un fisier cu numele dat, apoi sa se citeasca de la tastatura cuvinte pana cand se citeste de la tastatura caracterul '$'. Sa se scrie in fisier doar cuvintele care contin cel putin o litera mare (uppercase)
 segment data use32 class=data
     ; ...
     nume_fisier db "fisier.txt", 0
