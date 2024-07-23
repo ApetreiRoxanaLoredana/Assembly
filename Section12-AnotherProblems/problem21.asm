@@ -1,3 +1,5 @@
+; Se citeste de la tastatura un sir de numere in baza 10. Sa se afiseze numerele prime.
+
 bits 32 
 
 global start        
@@ -11,8 +13,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll    
-
-;Se citeste de la tastatura un sir de numere in baza 10. Sa se afiseze numerele prime.
 
 segment data use32 class=data
     ; ...
