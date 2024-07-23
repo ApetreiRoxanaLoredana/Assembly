@@ -1,3 +1,5 @@
+; Se citeste de la tastatura un sir de mai multe numere in baza 2. Sa se afiseze aceste numere in baza 16.
+
 bits 32 
 
 global start        
@@ -11,8 +13,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll    
-
-;Se citeste de la tastatura un sir de mai multe numere in baza 2. Sa se afiseze aceste numere in baza 16.
 
 segment data use32 class=data
     ; ...
