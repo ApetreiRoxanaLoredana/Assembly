@@ -1,3 +1,6 @@
+; Se da un sir de dublucuvinte (in segmentul de date). 
+; Sa se afiseze pe ecran, in baza 16, cuvintele cel mai putin semnificative care sunt siP negative si multipli de 16. 
+
 bits 32 
 
 global start        
@@ -11,11 +14,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll   
-
-;Problema 2:
-;Se da un sir de dublucuvinte (in segmentul de date). 
-;Sa se afiseze pe ecran, in baza 16, cuvintele cel mai putin semnificative care sunt siP negative si multipli de 16. 
-;Exemplu: ---- 
 
 segment data use32 class=data
     ; ...
