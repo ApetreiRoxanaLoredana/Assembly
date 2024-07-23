@@ -1,3 +1,7 @@
+; Se da un fisier text care contine litere, spatii si puncte. 
+; Sa se citeasca continutul fisierului, sa se determine numarul de cuvinte si 
+;sa se afiseze pe ecran aceasta valoare. (Se considera cuvant orice secventa de litere separate prin spatiu sau punct)
+
 bits 32 ; assembling for the 32 bits architecture
 
 ; declare the EntryPoint (a label defining the very first instruction of the program)
@@ -13,7 +17,6 @@ import exit msvcrt.dll    ; exit is a function that ends the calling process. It
                           ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
 
 ; our data is declared here (the variables needed by our program)
-;Se da un fisier text care contine litere, spatii si puncte. Sa se citeasca continutul fisierului, sa se determine numarul de cuvinte si sa se afiseze pe ecran aceasta valoare. (Se considera cuvant orice secventa de litere separate prin spatiu sau punct)
 segment data use32 class=data
     ; ...
     nume_fisier db "fisier.txt", 0
