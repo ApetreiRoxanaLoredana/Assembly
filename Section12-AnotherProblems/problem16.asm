@@ -1,3 +1,6 @@
+; Se da un sir de dublucuvinte declarat in segmentul de date. 
+; Sa se afiseze pozitiile cuvintelor prime si suma acestora(a cuvintelor) in baza 16.
+
 bits 32 
 
 global start        
@@ -11,10 +14,6 @@ import fread msvcrt.dll
 import fprintf msvcrt.dll
 import gets msvcrt.dll
 import exit msvcrt.dll    
-
-;Problema5(facultativ)
-
-;Se da un sir de dublucuvinte declarat in segmentul de date. Sa se afiseze pozitiile cuvintelor prime si suma acestora(a cuvintelor) in baza 16.
 
 segment data use32 class=data
     ; ...
